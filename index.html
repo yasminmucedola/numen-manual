@@ -98,27 +98,28 @@
   }
 
   /* Obrigatório */
-  .b-sim { background: #FCEBEB; color: #A32D2D; border: 1px solid #F5C6C6; }
-  .b-sim .badge-dot { background: #FF4747; }
-  .b-rec { background: #FEF9E7; color: #7D5A00; border: 1px solid #F5E6A3; }
-  .b-rec .badge-dot { background: #F5D06A; }
+  .b-obrig { background: #FCEBEB; color: #A32D2D; border: 1px solid #F5C6C6; }
+  .b-obrig .badge-dot { background: #FF4747; }
+  .b-rec   { background: #FEF9E7; color: #7D5A00; border: 1px solid #F5E6A3; }
+  .b-rec .badge-dot   { background: #F5D06A; }
 
   /* App ALM */
-  .b-proj { background: #E6F1FB; color: #185FA5; border: 1px solid #C3DCF5; }
-  .b-esc  { background: #E1F5EE; color: #085041; border: 1px solid #B3E8D6; }
-  .b-risk { background: #FAECE7; color: #8B3A1D; border: 1px solid #F5C9B8; }
-  .b-doc  { background: #FAEEDA; color: #854F0B; border: 1px solid #F5D9A8; }
+  .b-proj  { background: #E6F1FB; color: #185FA5; border: 1px solid #C3DCF5; }
+  .b-esc   { background: #E1F5EE; color: #085041; border: 1px solid #B3E8D6; }
+  .b-risk  { background: #FAECE7; color: #8B3A1D; border: 1px solid #F5C9B8; }
+  .b-doc   { background: #FAEEDA; color: #854F0B; border: 1px solid #F5D9A8; }
 
   /* Perfil */
-  .b-gp   { background: #EEEDFE; color: #3C3489; border: 1px solid #CBC8F8; }
-  .b-func { background: #E6F1FB; color: #185FA5; border: 1px solid #C3DCF5; }
-  .b-tec  { background: #F5EDE4; color: #6B3D1A; border: 1px solid #E8CEAD; }
-  .b-arq  { background: #FCE8F0; color: #8B1A4A; border: 1px solid #F5B8D2; }
+  .b-gp    { background: #EEEDFE; color: #3C3489; border: 1px solid #CBC8F8; }
+  .b-func  { background: #E6F1FB; color: #185FA5; border: 1px solid #C3DCF5; }
+  .b-integ { background: #E1F5EE; color: #085041; border: 1px solid #A8DDD5; }
+  .b-arq   { background: #FCE8F0; color: #8B1A4A; border: 1px solid #F5B8D2; }
+  .b-adm   { background: #FEEACC; color: #7A3B00; border: 1px solid #F5C98A; }
 
   /* Ordem */
-  .b-num  { background: #F0F0F0; color: #444; border: 1px solid #DCDCDC; font-weight: 600; }
+  .b-num   { background: #F0F0F0; color: #444; border: 1px solid #DCDCDC; font-weight: 600; }
 
-  .field-desc strong { color: #555; }
+  .field-desc strong { color: #666; }
 </style>
 </head>
 <body>
@@ -149,11 +150,11 @@
   <div class="field-row">
     <div class="field-name">Obrigatório</div>
     <div class="field-values">
-      <span class="badge b-sim"><span class="badge-dot"></span>Sim</span>
+      <span class="badge b-obrig"><span class="badge-dot"></span>Obrigatório</span>
       <span class="badge b-rec"><span class="badge-dot"></span>Recomendado</span>
       <div class="field-desc">
-        <strong style="color:rgba(255,255,255,0.55)">Sim</strong> — deve ser feito em todo projeto, sem exceção.<br>
-        <strong style="color:rgba(255,255,255,0.55)">Recomendado</strong> — fortemente sugerido, mas depende do contexto do projeto.
+        <strong>Obrigatório</strong> — deve ser feito em todo projeto, sem exceção.<br>
+        <strong>Recomendado</strong> — fortemente sugerido, mas depende do contexto do projeto.
       </div>
     </div>
   </div>
@@ -162,8 +163,9 @@
     <div class="field-name">Perfil</div>
     <div class="field-values">
       <span class="badge b-gp"><span class="badge-dot"></span>GP</span>
+      <span class="badge b-adm"><span class="badge-dot"></span>Administrador ALM</span>
       <span class="badge b-func"><span class="badge-dot"></span>Consultor Funcional</span>
-      <span class="badge b-tec"><span class="badge-dot"></span>Consultor Técnico</span>
+      <span class="badge b-integ"><span class="badge-dot"></span>Consultor Integração</span>
       <span class="badge b-arq"><span class="badge-dot"></span>Arquiteto</span>
       <div class="field-desc">Quem é responsável por executar esta atividade. Uma atividade pode ter mais de um perfil responsável.</div>
     </div>
